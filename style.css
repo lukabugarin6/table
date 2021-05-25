@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+
+.table .headline {
+    background-color: #d9d9d9;
+    color: #7f7f7f;
+    border-bottom: 2px solid #a6a6a6;
+    padding: .75rem 0;
+}
+
+.table .headline h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.table__row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    /* border-bottom: 2px dashed #a6a6a6; */
+    background-image: linear-gradient(to right, #a6a6a6 80%, #fff 0%);
+    background-position: bottom;
+    background-size: 20px 2px;
+    background-repeat: repeat-x;
+}
+
+.table__row > div {
+    padding: 1.5rem 1rem;
+}
+
+.table__row__number {
+    background-image: linear-gradient(#a6a6a6 80%, #fff 0%);
+    background-position: right;
+    background-size: 2px 20px;
+    background-repeat: repeat-y;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table__row__number h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.table__row__number h4 {
+    font-size: 4rem;
+}
+
+.table__row__number h5 {
+    font-size: 1.25rem;
+    color: #aeaeae;
+}
+
+.table__row__number:last-child {
+   background: none;
+}
+
+.table__row__text {
+    text-align: left;
+}
